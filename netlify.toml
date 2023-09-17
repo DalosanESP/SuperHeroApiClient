@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/main"
+  to = "/pages/main.js"
+  status = 200
