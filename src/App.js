@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './assets/styles/login.module.css';
-import CryptoJS from 'crypto-js';
+// import CryptoJS from 'crypto-js';
 
 function App() {
 
@@ -14,19 +14,19 @@ function App() {
     const emailOrUsername = document.getElementById('emailOrUsername').value;
     const password = document.getElementById('password').value;
 
-    const encryptData = (data, key) => {
-      const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), key).toString();
-      return encryptedData;
-    };
+    // const encryptData = (data, key) => {
+    //   const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), key).toString();
+    //   return encryptedData;
+    // };
 
-    const encryptionKey = 'b297b9b3641d990cd69bb96331fdea044982c23f4f9d2b4bbd612d6447846e22';
+    // const encryptionKey = 'b297b9b3641d990cd69bb96331fdea044982c23f4f9d2b4bbd612d6447846e22';
 
-    const dataToEncrypt = {
-      emailOrUsername: emailOrUsername,
-      password: password,
-    };
+    // const dataToEncrypt = {
+    //   emailOrUsername: emailOrUsername,
+    //   password: password,
+    // };
 
-    const encryptedData = encryptData(dataToEncrypt, encryptionKey);
+    // const encryptedData = encryptData(dataToEncrypt, encryptionKey);
 
     try {
       // const response = await fetch('http://127.0.0.1:3000/loginAuth', {

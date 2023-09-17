@@ -49,7 +49,7 @@ function Character() {
                                  <p>Batman</p>
                              </div> --> */}
                                     <td>
-                                        <h1></h1>
+                                        {/* <h1></h1> */}
                                     </td>
                                 </div>
                             </form>
