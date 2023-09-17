@@ -30,7 +30,7 @@ function App() {
 
     try {
       // const response = await fetch('http://127.0.0.1:3000/loginAuth', {
-        const response = await fetch('https://superheroapiserver-oe55-dev.fl0.io/loginAuth', {
+        const response = await fetch('https://main--super-hero-api-dalosan.netlify.app/loginAuth', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ function App() {
       <p className={styles.forgotPassword}>-or-</p>
       <div className={styles.buttonContainer}>
         {/* <button type="button" onClick={() => window.location.href = 'http://127.0.0.1:3000/auth/google'}> */}
-          <button type="button" onClick={() => window.location.href = 'https://superheroapiserver-oe55-dev.fl0.io/auth/google'}>
+          <button type="button" onClick={() => window.location.href = 'https://main--super-hero-api-dalosan.netlify.app/auth/google'}>
           <span>
             <img className={styles.googleImg}
               src="https://img.freepik.com/iconos-gratis/google_318-278809.jpg?w=2000"
