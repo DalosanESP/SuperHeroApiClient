@@ -1,0 +1,133 @@
+:root {
+  --dark-color: #0a0a0a;
+  --red-color: #f64445;
+}
+
+body {
+  background: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--poppins-font, Arial, sans-serif);
+  color: grey;
+  background: var(--red-color);
+  background: -o-linear-gradient(281deg, #f64445 0%, #611cac 100%);
+  background: linear-gradient(169deg, #f64445 0%, #611cac 100%);
+}
+
+input {
+  font-size: large;
+  color: white;
+  width: 95%;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.loginContainer {
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 400px;
+}
+
+.loginForm input{
+  margin-bottom: 50px;
+  font-size: medium;
+}
+
+.loginForm label{
+  font-size: large;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.title span {
+  color: var(--red-color);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.googleImg {
+  margin-right: 25px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.toSignUp {
+  margin-top: -50px;
+  text-align: right;
+  color: #777;
+  font-size: small;
+}
+
+.forgotPassword {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.continueWithGoogleButton {
+  vertical-align: 5px
+};
