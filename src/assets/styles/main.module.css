@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --poppins-font: 'Poppins', sans-serif;
+    --dark-color: #0a0a0a;
+    --red-color: #f64445;
+    --light-color: #fff;
+    --grey-color: #505050;
+    --yellow-color: #f2c10e;
+}
+
+.background {
+    background-image: url('../images/1330752.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Asegura que el fondo cubra toda la altura de la pantalla */
+}
+
+.formHero {
+    margin-top: 5%;
+    flex-direction: column;
+    text-align: center;
+    color: var(--light-color);
+    height: 100%; /* Añade esta propiedad para ocupar toda la altura del contenedor */
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    background: rgba(0,0,0,.5);
+    padding: 50px 47px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección a horizontal */
+    align-items: center;
+    width: 100%;
+}
+
+.searchInput {
+    flex: 1; /* Haz que el input ocupe todo el espacio disponible */
+    padding: 15px;
+    font-size: 16px;
+    background-color: var(--light-color);
+    border: none;
+    margin-right: 10px; /* Agrega un margen entre el input y el botón */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.searchButton {
+    padding: 15px;
+    background: #4272d7;
+    white-space: nowrap;
+    border-radius: 0.5px;
+    font-size: 20px;
+    color: #fff;
+    transition: all .2s ease-out, color .2s ease-out;
+    border: 0;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: var(--yellow-color);
+}

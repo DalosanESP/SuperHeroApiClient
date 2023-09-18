@@ -1,5 +1,7 @@
 import React, { useState } from 'react'; // Asegúrate de importar 'useState' desde 'react'
 import { useNavigate } from 'react-router-dom';
+import styles from '../assets/styles/main.module.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Main() {
     const [nameOfHero, setNameOfHero] = useState('');
@@ -11,26 +13,26 @@ function Main() {
     };
 
     return (
-        <div className="gif"> {/* Cambia 'class' a 'className' para las clases CSS */}
-            <img src="https://i.pinimg.com/originals/4c/5f/5c/4c5f5c71edccb657b8fdee89e568bc03.gif" alt="" />
-
-            <div className="container"> {/* Cambia 'class' a 'className' */}
-                <div className="header"> {/* Cambia 'class' a 'className' */}
-                    <h1 className="logo">Superhero API</h1> {/* Cambia 'class' a 'className' */}
-                    <span>Explore a database of superheroes</span>
+        <div className={styles.background}>
+            <div className={styles.formHero}>
+                <div className="">
+                    <h1 className={styles.title}>Superhero API</h1>
                 </div>
-                <form className="search-container" onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        className="search-input"
-                        value={nameOfHero}
-                        onChange={(e) => setNameOfHero(e.target.value)}
-                        placeholder="Search superheroes..."
-                    />
-                    <button type="submit" className="search-button">
-                        Search
-                    </button>
-                </form>
+                <div className={styles.formContainer}>
+                    <form className={styles.form} onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            className={styles.searchInput}
+                            value={nameOfHero}
+                            onChange={(e) => setNameOfHero(e.target.value)}
+                            placeholder="Search superheroes..."
+                        />
+                        <button className={styles.searchButton}>
+                            Search
+                        </button>
+                        {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
+                    </form>
+                </div>
             </div>
         </div>
     );

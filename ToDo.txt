@@ -1,0 +1,4 @@
+ANTES DE TERMINAR: 
+
+    ENCRIPTAR datos
+    

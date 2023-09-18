@@ -1,0 +1,2 @@
+El archivo _redirects se utiliza para que el hosting pueda utilizar el router, en este caso es netlify (Quizá cambie para otros hosting)
+

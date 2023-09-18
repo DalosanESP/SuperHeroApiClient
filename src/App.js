@@ -29,8 +29,8 @@ function App() {
     // const encryptedData = encryptData(dataToEncrypt, encryptionKey);
 
     try {
-      // const response = await fetch('http://127.0.0.1:3000/loginAuth', {
-        const response = await fetch('https://superheroapiserver-oe55-dev.fl0.io/loginAuth', {
+       //const response = await fetch('http://127.0.0.1:3000/loginAuth', {
+       const response = await fetch('https://superheroapiserver-oe55-dev.fl0.io/loginAuth', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
