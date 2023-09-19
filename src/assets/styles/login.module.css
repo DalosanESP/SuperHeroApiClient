@@ -82,12 +82,12 @@ button:active {
   width: 400px;
 }
 
-.loginForm input{
+.loginForm input {
   margin-bottom: 50px;
   font-size: medium;
 }
 
-.loginForm label{
+.loginForm label {
   font-size: large;
 }
 
@@ -130,4 +130,6 @@ button:active {
 
 .continueWithGoogleButton {
   vertical-align: 5px
-};
+}
+
+;

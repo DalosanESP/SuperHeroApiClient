@@ -13,27 +13,33 @@ function Main() {
     };
 
     return (
-        <div className={styles.background}>
-            <div className={styles.formHero}>
-                <div className="">
-                    <h1 className={styles.title}>Superhero API</h1>
+        <div className={styles.gif}>
+           
+
+            <div className={styles.container}>
+                <div className={styles.header}>
+                    <h1 className={styles.logo}>
+                        Super<span className={styles.hero}>Hero</span>
+                    </h1>
+                    <span className={styles.description}>Explore a database of superheroes</span>
                 </div>
-                <div className={styles.formContainer}>
-                    <form className={styles.form} onSubmit={handleSubmit}>
+                <form className={styles["search-form"]} onSubmit={handleSubmit}>
+                    <div className={styles["search-input-container"]}>
                         <input
                             type="text"
-                            className={styles.searchInput}
+                            className={styles["search-input"]}
                             value={nameOfHero}
                             onChange={(e) => setNameOfHero(e.target.value)}
                             placeholder="Search superheroes..."
                         />
-                        <button className={styles.searchButton}>
+                        <button type="submit" className={styles["search-button"]}>
                             Search
                         </button>
-                        {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
+            <br></br>
+            <img src="https://i.pinimg.com/originals/4c/5f/5c/4c5f5c71edccb657b8fdee89e568bc03.gif" alt="" />
         </div>
     );
 }
